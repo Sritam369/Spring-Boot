@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk-25">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Sritam Chakrabartty/Downloads/spring-context-7.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sritam Chakrabartty/Downloads/spring-core-7.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sritam Chakrabartty/Downloads/spring-beans-7.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sritam Chakrabartty/Downloads/spring-jcl-6.2.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sritam Chakrabartty/Downloads/spring-expression-7.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sritam Chakrabartty/Downloads/spring-aop-7.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sritam Chakrabartty/Downloads/spring-context-support-7.0.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
