@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           https://www.springframework.org/schema/context/spring-context.xsd">
+          
+          <bean id="project" class="com.sri.sbeans.Project">
+          <constructor-arg name="id" value="p101"/>
+          <constructor-arg name="name" value="java project"/>
+          </bean>
+          
+          <bean id="employee" class="com.sri.sbeans.Employee">
+          <constructor-arg name="id" value="e101"/>
+          <constructor-arg name="name" value="sritam"/>
+          <property name="project" ref="project" />
+          </bean>
+          
+          <bean id="department" class="com.sri.sbeans.Department">
+          <constructor-arg name="name" value="development"/>
+          <constructor-arg>
+          <list>
+          <ref bean="employee"/> 
+          </list>
+          </constructor-arg>
+          </bean>
+          
+          <bean id="company" class="com.sri.sbeans.Company">
+          <constructor-arg name="name" value="tcs"/>
+          <constructor-arg>
+          <map>
+            <entry key="IT" value-ref="department"/>
+        </map>
+          </constructor-arg>
+          </bean>
+          
+          
+          </beans>
