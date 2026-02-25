@@ -1,22 +1,19 @@
 package com.sri.cfgs;
 
-import java.time.LocalDate;
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
-import com.sri.sbean.WeekDayAnalyzer;
+import com.sri.sbean.Printer;
 
 @Configuration
-@ComponentScan(basePackages="com.sri.sbean")
+//@ComponentScan(basePackages="com.sri.sbean")
 public class AppConfig {
-  public AppConfig() {
-	  
-  }
 
-  @Bean(name="ldate")
-  public LocalDate createDate() {
-	  return LocalDate.now();
-  }
+	@Bean(name="p1")
+	@Scope("prototype")
+	public Printer getPrinter() {
+		return Printer.getInstance();
+	}
 }

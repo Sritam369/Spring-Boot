@@ -1,7 +1,7 @@
 package com.sri.main;
-import com.sri.cfgs.AppConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.sri.cfgs.AppConfig;
 import com.sri.sbean.WeekDayAnalyzer;
 
 public class DependencyMgmt {

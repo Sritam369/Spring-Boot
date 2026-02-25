@@ -16,6 +16,7 @@ public class Testing {
 		WishMessageGenerator w2 = ctx.getBean("wmg",WishMessageGenerator.class);
 		IO.println(w.hashCode());
 		IO.println(w2.hashCode());
+		IO.println(w==w2);
 		IO.println(w.show());
 		LocalDate d1 = ctx.getBean("ldate",LocalDate.class);
 		LocalDate d2 = ctx.getBean("ldate",LocalDate.class);
