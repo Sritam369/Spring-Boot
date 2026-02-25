@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           https://www.springframework.org/schema/context/spring-context.xsd">
+          
+          <bean id="author" class="com.sri.sbeans.Author">
+          <constructor-arg name="id" value="101"/>
+          <constructor-arg name="name" value="manoj das"/>
+          </bean>
+           
+          <bean id="book" class="com.sri.sbeans.Book">
+          <constructor-arg name="id" value="101"/>
+          <constructor-arg name="title" value="bilei"/>
+          <property name="author" ref="author"/>
+          </bean>
+           
+          <bean id="library" class="com.sri.sbeans.Library">
+          <constructor-arg name="name" value="ameerpet Library"/>
+          <constructor-arg name="books" >
+          <list>
+          <ref bean="book"/>
+          </list>
+          
+          </constructor-arg>
+          </bean>
+          
+          <bean id="librarian" class="com.sri.sbeans.Librarian">
+          <constructor-arg name="name" value="sritam"/>
+          <property name="library" ref="library"/>
+          </bean>
+          
+          <context:component-scan base-package="com.sri.sbeans"/>
+          <context:annotation-config/>
+           </beans>
