@@ -9,7 +9,7 @@ public class MonthEnd {
 	public static void main(String[] args) {
 		FileSystemXmlApplicationContext ctx = new FileSystemXmlApplicationContext("src/com/sri/cfgs/appContext2.xml");
 		MonthEndReminder remind = ctx.getBean("mer",MonthEndReminder.class);
-		IO.println(remind.show());
+		System.out.println(remind.show());
 	}
 
 }

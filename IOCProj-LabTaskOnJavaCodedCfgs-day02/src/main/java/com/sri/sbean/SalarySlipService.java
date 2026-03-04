@@ -14,8 +14,8 @@ public class SalarySlipService {
 		double taxAmount = (grossSalary*employee.getTaxPercentage())/100;
 		double netSalary = grossSalary-taxAmount;
 		
-		System.out.println(grossSalary);
-		System.out.println(taxAmount);
-		System.out.println(netSalary);
+		IO.println(grossSalary);
+		IO.println(taxAmount);
+		IO.println(netSalary);
 	}
 }

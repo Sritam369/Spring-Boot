@@ -9,7 +9,7 @@ public class Testing {
 	public static void main(String[] args) {
 	  FileSystemXmlApplicationContext ctx = new FileSystemXmlApplicationContext("src/com/sri/cfgs/appContext.xml");
 	  WeekDayAnalyzer generate=ctx.getBean("wda",WeekDayAnalyzer.class);
-	  IO.println(generate.showMsg());
+	  System.out.println(generate.showMsg());
 	}
 
 }
