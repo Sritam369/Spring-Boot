@@ -10,7 +10,7 @@ public class DependencyMgmt {
 		
 		try(AnnotationConfigApplicationContext ctx =new AnnotationConfigApplicationContext(AppConfig.class)){
 		WeekDayAnalyzer analyze = ctx.getBean("wda",WeekDayAnalyzer.class);
-		IO.println(analyze.showMessage("Sritam"));
+		System.out.println(analyze.showMessage("Sritam"));
 	}
     catch(Exception e) {
     	e.printStackTrace();
