@@ -15,6 +15,7 @@ public class App {
       String lang = sc.next();
       System.out.println("provide country");
       String country = sc.next();
+  
       Locale locale =new Locale(lang,country);
       String msg1 = ctx.getMessage("welcome.msg", new Object[] {"sritam"}, locale);
       String msg2 = ctx.getMessage("goodbye.msg", new Object[] {}, locale);
