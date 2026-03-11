@@ -2,6 +2,8 @@ package com.sri.sbeans;
 
 import org.springframework.stereotype.Component;
 
+import lombok.Data;
+
 @Component("dc")
 public class DiscountCalculator {
 
