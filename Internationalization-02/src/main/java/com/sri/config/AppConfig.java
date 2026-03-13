@@ -1,4 +1,4 @@
-package com.sri.cfgs;
+package com.sri.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -7,10 +7,10 @@ import org.springframework.context.support.ResourceBundleMessageSource;
 @Configuration
 public class AppConfig {
 
-	@Bean(name="messageSource")
-	public ResourceBundleMessageSource createRBMS() {
+	@Bean("messageSource")
+	public ResourceBundleMessageSource create() {
 		ResourceBundleMessageSource r = new ResourceBundleMessageSource();
-		r.setBasename("com/sri/commons/App");
+		r.setBasename("com/sri/commons/message");
 		return r;
 	}
 }

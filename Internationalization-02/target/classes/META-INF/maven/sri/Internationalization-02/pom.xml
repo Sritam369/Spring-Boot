@@ -3,17 +3,17 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>nit</groupId>
-  <artifactId>FactoryPatternWithMultipleFactoryMethods</artifactId>
+  <groupId>sri</groupId>
+  <artifactId>Internationalization-02</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>FactoryPatternWithMultipleFactoryMethods</name>
+  <name>Internationalization-02</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.release>25</maven.compiler.release>
+    <maven.compiler.release>17</maven.compiler.release>
   </properties>
 
   <dependencyManagement>
@@ -40,7 +40,9 @@
       <artifactId>junit-jupiter-params</artifactId>
       <scope>test</scope>
     </dependency>
-        <dependency>
+    
+    <!-- Source: https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
+<dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-context-support</artifactId>
     <version>7.0.5</version>
