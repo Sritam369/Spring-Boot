@@ -1,0 +1,34 @@
+org:
+ nit:
+   eno: 101
+   ename: sritam
+
+#for array
+   favcolors:
+     - red  
+     - green
+     - blue
+
+#for list
+   nicknames:
+    - munna
+    - sonu
+    - subu
+
+#for set
+   phoneNumbers:
+     - 1111111
+     - 2222222
+     - 3333333
+
+#for map
+   idDetails:
+      aadhar: 897456
+      voter: 456132
+
+# HAS-A property
+   company:
+      id: 101
+      name: sritam
+      addr: hyd
+      size: 10
