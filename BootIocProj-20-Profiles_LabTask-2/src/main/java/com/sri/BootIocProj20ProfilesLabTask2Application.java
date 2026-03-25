@@ -10,15 +10,8 @@ import com.sri.service.CreditCardPaymentService;
 @SpringBootApplication
 public class BootIocProj20ProfilesLabTask2Application {
 
-
 	public static void main(String[] args) {
-		try(ConfigurableApplicationContext ctx = SpringApplication.run(BootIocProj20ProfilesLabTask2Application.class, args)){
-			Runner bean = ctx.getBean(Runner.class);
-			IO.println(bean.payment());
-		}
-		catch(Exception e) {
-			e.printStackTrace();
-		}
+		SpringApplication.run(BootIocProj20ProfilesLabTask2Application.class, args);		
 	}
 
 }
