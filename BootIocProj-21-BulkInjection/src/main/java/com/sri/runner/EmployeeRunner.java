@@ -1,0 +1,21 @@
+package com.sri.runner;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+import com.sri.sbeans.Employee;
+
+@Component
+public class EmployeeRunner implements CommandLineRunner{
+
+	@Autowired
+	private Employee emp;
+	
+	@Override
+	public void run(String... args) throws Exception {
+		IO.println(emp);		
+	}
+
+	
+}
